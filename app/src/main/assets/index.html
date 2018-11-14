@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEST</h1>
+    <button type="button" id="button1" onclick="callAndroid()">click to call android method</button>
+    
+    <script>
+        alert("init");
+        function callJs(){
+            alert("Android 调用了callJS方法");
+            return "成功"
+        }
+
+        function callAndroid(){
+           var str =  test.hello("JS call Android method");
+           alert(str);
+        }
+    </script>
+</body>
+</html>
